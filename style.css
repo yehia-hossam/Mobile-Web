@@ -1,0 +1,173 @@
+*{
+padding: 0;
+margin: 0;
+font-family: sans-serif;
+
+}
+.container{
+    background: #e8e5e59a;
+    min-height:100vh ;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    align-items:center;
+    padding: 10px 0;
+    background:#000;
+
+}
+.logo{
+    width: 40px;
+    position: relative;
+    left: 100px;
+    
+   
+   
+}
+ul li{
+    display: inline-block;
+
+
+}
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin:  0 10px;
+   
+ 
+ 
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.content .text{
+    width: 40%;
+    color: #000;
+}
+.content .text h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    animation-name: h2;
+    animation-duration: 5s;
+}
+.content .text p {
+    font-size: 18px;
+    margin: 20px 0;
+    animation-name: p;
+    animation-duration: 5s;
+}
+.content .text a{
+    text-decoration: none;
+    background: #9c0a0a;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+ .text a:hover{
+    background: rgb(22, 21, 21);
+}
+.text a:active{
+    color: rgb(255, 0, 0);
+}
+.content .image{
+    width: 30%; 
+    animation-name: image;
+    animation-duration: 5s;
+   
+   
+    
+}
+.content .image img{
+    width: 180px
+    
+}
+.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    animation-name: icons;
+    animation-duration: 5s;
+    
+
+ 
+}
+.icons img{
+    width: 40px;
+    transition:0.5s ;
+    cursor: pointer;
+}
+.icons img:hover{
+    transform: scale(1.2);
+}
+h3 {
+   color: #940b0b;
+   font-size: 20px;
+
+}
+h2{
+font-size: 30px;
+}
+
+@keyframes image{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes icons{
+    0%{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes p {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    }
+
+    @keyframes h2{
+        0%{
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes a {
+        0%{
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
